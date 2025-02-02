@@ -8,9 +8,6 @@ This is a simple web application built using Actix Web framework in Rust. The ap
 my-actix-web-app
 ├── src
 │   ├── main.rs         # Entry point of the application
-│   ├── handlers        # Contains handler functions for routes
-│   ├── routes          # Sets up routing for the application
-│   └── models          # Defines data structures and models
 ├── Cargo.toml          # Project configuration and dependencies
 └── README.md           # Documentation for the project
 ```

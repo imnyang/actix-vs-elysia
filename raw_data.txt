@@ -1,0 +1,68 @@
+  > [~\Desktop\Temp\Bench\scripts] $ bombardier --fasthttp -c 200 -d 60s http://localhost:3000/
+Bombarding http://localhost:3000/ for 1m0s using 200 connection(s)
+[================================================================================================================] 1m0s
+Done!
+Statistics        Avg      Stdev        Max
+  Reqs/sec     72905.54   10321.38   96142.77
+  Latency        2.74ms    89.89us    31.93ms
+  HTTP codes:
+    1xx - 0, 2xx - 4374298, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    12.44MB/s
+  > [~\Desktop\Temp\Bench\scripts] $ bombardier --fasthttp -c 200 -d 60s http://localhost:3000/id/1?name=bun
+Bombarding http://localhost:3000/id/1?name=bun for 1m0s using 200 connection(s)
+[================================================================================================================] 1m0s
+Done!
+Statistics        Avg      Stdev        Max
+  Reqs/sec     49289.75    8695.45   65348.36
+  Latency        4.06ms   365.10us    39.69ms
+  HTTP codes:
+    1xx - 0, 2xx - 2957394, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    10.34MB/s
+  > [~\Desktop\Temp\Bench\scripts] $ bombardier --fasthttp -c 200 -d 60s -m POST -H 'Content-Type: application/json' -f ./body.json http://localhost:3000/json
+Bombarding http://localhost:3000/json for 1m0s using 200 connection(s)
+[================================================================================================================] 1m0s
+Done!
+Statistics        Avg      Stdev        Max
+  Reqs/sec     41179.30    7613.59   56432.51
+  Latency        4.86ms   414.25us    37.30ms
+  HTTP codes:
+    1xx - 0, 2xx - 2470391, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    11.15MB/s
+
+
+  > [~\Desktop\Temp\Bench\scripts] $ bombardier --fasthttp -c 200 -d 60s http://localhost:3001/
+Bombarding http://localhost:3001/ for 1m0s using 200 connection(s)
+[================================================================================================================] 1m0s
+Done!
+Statistics        Avg      Stdev        Max
+  Reqs/sec     60862.14    9899.28  150716.28
+  Latency        3.21ms     2.47ms      1.37s
+  HTTP codes:
+    1xx - 0, 2xx - 3669816, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    10.50MB/s
+  > [~\Desktop\Temp\Bench\scripts] $ bombardier --fasthttp -c 200 -d 60s http://localhost:3001/id/1?name=rst
+Bombarding http://localhost:3001/id/1?name=rst for 1m0s using 200 connection(s)
+[================================================================================================================] 1m0s
+Done!
+Statistics        Avg      Stdev        Max
+  Reqs/sec     48399.96    7842.88   97313.91
+  Latency        4.05ms     4.29ms      1.65s
+  HTTP codes:
+    1xx - 0, 2xx - 2922969, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:     8.36MB/s
+  > [~\Desktop\Temp\Bench\scripts] $ bombardier --fasthttp -c 200 -d 60s -m POST -H 'Content-Type: application/json' -f ./body.json http://localhost:3001/json
+Bombarding http://localhost:3001/json for 1m0s using 200 connection(s)
+[================================================================================================================] 1m0s
+Done!
+Statistics        Avg      Stdev        Max
+  Reqs/sec     42199.07    7193.31  141443.65
+  Latency        4.70ms     4.64ms      1.08s
+  HTTP codes:
+    1xx - 0, 2xx - 2528245, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    10.82MB/s

@@ -5,3 +5,5 @@ https://rust.gay
 ![Get2](./benchmark_comparison_get2.png)
 ![Post](./benchmark_comparison_post.png)
 ![Memory](./benchmark_comparison_memory.png)
+
+The reason there is more data from Elysia in memory is because I did the logging semi-automatically.
